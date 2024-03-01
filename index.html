@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schere Stein Papier</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-yellow-100 select-none">
+  <div id="gameContent" class="invisible">
+    <div class="flex mt-4 justify-center">
+      <button id="rock">Stein</button>
+      <button id="paper">Papier</button>
+      <button id="scissors">Schere</button>
+    </div>
+    <div>
+      <p class="result"></p>
+      <p class="computer"></p>
+    </div>
+    <div class="flex justify-center mt-36">
+      <div id="plWinImgStyle">
+        <img src="" alt="" id="plImg">
+      </div>
+      <p id="versus" class="text-7xl mt-[6rem] mr-[5rem] invisible">VS</p>
+      <div id="comWinImgStyle">
+        <img src="" alt="" id="comImg">
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <p id="result" class="text-9xl mt-20"></p>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <a href="#" id="startGame" class="button button--piyo">
+      <div class="button__wrapper">
+        <span class="button__text">START</span>
+      </div>
+      <div class="characterBox">
+        <div class="character wakeup">
+          <div class="character__face"></div>
+        </div>
+        <div class="character wakeup">
+          <div class="character__face"></div>
+        </div>
+        <div class="character">
+          <div class="character__face"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <audio controls autoplay loop class="invisible">
+    <source src="/src/music.mp3" type="audio/mp3">
+
+  </audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
